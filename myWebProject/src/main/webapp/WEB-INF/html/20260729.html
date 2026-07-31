@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>인풋 요소 공통 속성</h1>
+	<form action="#">
+		<label for="valIp">value</label><br> <input id="valIp"
+			type="text" value="지정됨"><br>
+		<br> <label for="afIp">autofocus</label><br> <input
+			id="afIp" type="text" placeholder="자동 포커스됨" autofocus><br>
+		<br> <label for="roIp">readonly</label><br> <input id="roIp"
+			type="text" value="읽기만 가능, 전송됨" readonly><br>
+		<br> <label for="daIp">disabled</label><br> <input id="daIp"
+			type="text" placeholder="입력 불가, 전송 안 됨" disabled><br>
+		<br> <label for="rqIp">required</label><br> <input id="rqIp"
+			type="text" placeholder="필수 입력!" required><br>
+		<br> <input type="radio" name="fruit" id="f_apple" value="apple"
+			checked><label for="f_apple">사과</label> <input type="radio"
+			name="fruit" id="f_grape" value="grape"><label for="f_grape">포도</label>
+		<input type="radio" name="fruit" id="f_orange" value="orange" disabled><label
+			for="f_orange">오렌지(품절)</label><br> <br>
+		<br>
+		<button type="submit">제출</button><br>
+		<input type="button" value="인풋으로 만든 버튼">
+		
+		
+	</form>
+	<hr>
+	<h1>textarea 태그</h1>
+	<label for="message">메시지를 입력하세요.</label><br>
+	<textarea cols="64" rows="5" placeholder="내용을 입력하세요."></textarea><br>
+	<hr>
+	<h1>option 태그</h1>
+	<h2>select 태그에서의 option 태그</h2>
+	<label for="lang">언어</label>
+	<select id="lang" multiple>
+	<!-- 선택할때 눈에보이는건 HTML CSS 자바스크립트가 보이고 실제로 선택되는건 'value'값임 -->
+		<option value="">언어 선택</option>
+		<option value="html">HTML</option>
+		<option value="css" selected>CSS</option>
+		<option value="js">자바스크립트</option>
+		<option value="ts">타입스크립트</option>
+	</select>
+	<br><br>
+	<h2>optgroup 태그</h2>
+	<label for="shopping">쇼핑 목록</label>
+	<select id="shopping">
+		<optgroup label="과일">
+			<option value="f_apl">사과</option>
+			<option value="f_grp">포도</option>
+			<option value="f_org">오렌지</option>
+		</optgroup>
+		<optgroup label="채소">
+			<option value="v_crt">당근</option>
+			<option value="v_tmt">토마토</option>
+			<option value="v_ept">가지</option>
+		</optgroup>
+		<optgroup label="육류">
+			<option value="m_bef">소고기</option>
+			<option value="m_prk">돼지고기</option>
+			<option value="m_ckn">닭고기</option>
+		</optgroup>
+	</select>
+	<br><br>
+	<h2>datalist 태그</h2>
+	<label for="job">현재 직업</label>
+	<input id="job" list="jobs">
+	<datalist id="jobs">
+		<option value="학생">
+		<option value="디자이너">
+		<option value="퍼블리셔">
+		<option value="개발자">
+	</datalist>
+	<hr>
+	<h1>정도를 표현하는 태그</h1>
+	<h2>progress 태그</h2>
+	<progress id="progressBar" max="100">50%</progress>
+	<br><br>
+	<h2>meter 태그</h2>
+	<p>'low'와'high'는 상대적기준 색깔의 속성은 'optimum'에 가까울수록 이상적인색깔이됨</p>
+	<meter min="0" max="100" low="33" high="67" optimum="50" value="20">20달러</meter>
+	<meter min="0" max="100" low="33" high="67" optimum="50" value="50">50달러</meter>
+	<hr>
+	<h1>pre 태그</h1>
+	<pre>
+	모든 공백 요소들이 그대로 입력됨 스페이스바 탭 엔터 등등
+	</pre>
+	<hr>
+	<h1>iframe 태그</h1>
+	<iframe width="560" height="315" src="https://youtu.be/AKz7rX8FLWI?si=PhRMtsey80G45myP" title="YoutTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	</iframe>
+	<hr>
+	<h1>아무것도 하지 않는 태그</h1>
+	<h2>span 태그</h2>
+	<p>텍스트 내용이 들어간 부분의 영역<strong>(인라인)</strong></p>
+	<span style="background-color: #f00">안녕하세요?</span>
+	<br><br>
+	<h2>div 태그</h2>
+	<p>한 줄 전체의 영역을 차지함<strong>(블록)</strong></p>
+	<div style="background-color: #0f0">
+	<pre>
+	안녕하세요?
+	반갑습니다
+	들어가세요</pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
