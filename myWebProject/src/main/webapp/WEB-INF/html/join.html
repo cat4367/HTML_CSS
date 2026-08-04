@@ -5,9 +5,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>회원가입</h1>
-	<form action="./join_success.html">
-<pre>
+	<div style=" text-align: center; border-radius: 2px solid black;">
+		<h1>회원가입</h1>
+		<form action="./join_success.html">
+			<pre>
 <textarea rows="30" cols="100" disabled>
 		제 1 장 총 칙
 제 1 조 (목적)
@@ -52,39 +53,44 @@
 
 </textarea>
 </pre>
-		<label for="agr">동의 합니다.</label><input id="agr" type="checkbox">
-		<br>
-		<label for="idd">아이디</label><br>
-		<input id="idd" type="text" placeholder="사용할 아이디를 입력하세요." required><br>
-		<labe1 for="paWd">비밀번호</labe1><br>
-		<input id="paWd" type="password" minlength="4" placeholder="4자 이상" required><br>
-		<label for="name">이름</label><br>
-		<input id="name" type="text" required><br>
-		<label for="age">나이</label><br>
-		<input id="age" type="number" required><br><br>
-		<p>성별</p>
-		<label for="ms">남</label><input id="ms" name="gen" type="radio" required>
-		<label for="fs">여</label><input id="fs" name="gen" type="radio" required>
-		<p>최종학력</p>
-		<input id="lsc" name="school" type="radio"><label for="lsc">초등학교</label>
-		<input id="msc" name="school" type="radio"><label for="msc">중학교</label>
-		<input id="hsc" name="school" type="radio"><label for="hsc">고등학교</label>
-		<input id="usc" name="school" type="radio"><label for="usc">대학교</label><br>
-		<label for="home">거주지</label><br><br>
-		<select id="home" required>
-			<option value="">--선택--</option>
-			<option value="A">서울</option>
-			<option value="B">인천</option>
-			<option value="C">대전</option>
-			<option value="D">광주</option>
-			<option value="E">부산</option>
-			<option value="F">대구</option>
-		</select><br>
-		
-		
-		<a href="./join_success.html" target="_blank">
-		<button type="submit" >제출</button></a><button type="reset">취소</button>
-	</form>
+			<label for="agr">동의 합니다.</label><input id="agr" type="checkbox">
+			<br> <label for="idd">아이디</label> <input id="idd" type="text"
+				placeholder="사용할 아이디를 입력하세요." required style="margin-right: 15px"><br>
+			<br>
+			<labe1 for="paWd">비밀번호</labe1>
+			<input id="paWd" type="password" minlength="4" placeholder="4자 이상"
+				required style="margin-right: 30px"><br>
+			<br> <label for="name">이름</label> <input id="name" type="text"
+				required><br>
+			<br> <label for="age">나이</label> <input id="age" type="number"
+				required><br>
+			<br>
+			<p>성별</p>
+			<label for="ms">남</label><input id="ms" name="gen" type="radio"
+				required> <label for="fs">여</label><input id="fs" name="gen"
+				type="radio" required>
+			<p>최종학력</p>
+			<input id="lsc" name="school" type="radio"><label for="lsc">초등학교</label>
+			<input id="msc" name="school" type="radio"><label for="msc">중학교</label>
+			<input id="hsc" name="school" type="radio"><label for="hsc">고등학교</label>
+			<input id="usc" name="school" type="radio"><label for="usc">대학교</label><br>
+			<br> <label for="home">거주지</label><br> <select id="home"
+				required>
+				<option value="">--선택--</option>
+				<option value="A">서울</option>
+				<option value="B">인천</option>
+				<option value="C">대전</option>
+				<option value="D">광주</option>
+				<option value="E">부산</option>
+				<option value="F">대구</option>
+			</select><br><br> <a href="./join_success.html" target="_blank">
+				<button type="submit"
+					style="width: 100px; height: 40px; font-size: 25px; font-weight: bold;">제출</button>
+			</a>
+			<button type="reset"
+				style="width: 100px; height: 40px; font-size: 25px; font-weight: bold;">취소</button>
+		</form>
+	</div>
 
 </body>
 </html>
