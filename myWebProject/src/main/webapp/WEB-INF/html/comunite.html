@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="joinn.css">
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-div > a{
-font-size: 30px; margin: 0 30px; border: 2px solid black; border-radius: 15px; text-decoration: none; background-color: #407be3;
-}
 tr > td{
 	border: 1px solid #dddddd;
 }
@@ -34,14 +32,10 @@ tbody td:nth-child(1),tbody td:nth-child(3){
 	
 	<div style="background-color: #eef9f2; padding: 10px 0; border-top: 3px dashed #679e8a; border-bottom: 3px dashed #679e8a;">
 	<div style="display: inline-block; text-align: center; width: 100%; ">
-		<a href="./main.html" target="_self">
-		홈페이지</a> 
-		<a href="./wellcome.html" target="_self" >
-		인사말</a> 
-		<a href="./comunite.html" target="_self">
-		게시판</a> 
-		<a href="./join.html" target="_self">
-		회원가입</a>
+			<button type="button" class="button" onclick="location.href='./main.html'">홈페이지</button>
+			<button type="button" class="button" onclick="location.href='./wellcome.html'">인사말</button>
+			<button type="button" class="button" onclick="location.href='./comunite.html'">게시판</button>
+			<button type="button" class="button" onclick="location.href='./join.html'">회원가입</button>
 	</div>
 	</div>
 	<h1 style="text-align: center;">자유 게시판</h1>
@@ -60,7 +54,7 @@ tbody td:nth-child(1),tbody td:nth-child(3){
 			<td>1</td>
 			<td>날씨가 덥다	</td>
 			<td>JHM</td>
-			<td>2026/07/29</td>
+			<td>2026/07/29 </td>
 			</tr>
 		</tbody>
 		<tbody>
@@ -68,7 +62,7 @@ tbody td:nth-child(1),tbody td:nth-child(3){
 			<td>2</td>
 			<td>집에 가고싶다</td>
 			<td>JHM</td>
-			<td>2026/07/30</td>
+			<td>2026/07/30 </td>
 			</tr>
 		</tbody>
 		<tbody>
@@ -76,7 +70,7 @@ tbody td:nth-child(1),tbody td:nth-child(3){
 			<td>3</td>
 			<td>시험이 어렵네</td>
 			<td>JHM</td>
-			<td>2026/08/02</td>
+			<td>2026/08/02 </td>
 			</tr>
 		</tbody>
 	</table>
