@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.pic{
+	width: 300px;
+	height: 300px;
+	border: 1px solid #aaa;
+	background-image: url(./image/winter.jpg);
+	border-radius: 50%;
+}
+.gra{
+	width: 300px;
+	height: 300px;
+	border: 1px solid #aaa;
+	background: linear-gradient(gold, white, tomato);
+	border-radius: 50%;
+
+
+}
+</style>
+</head>
+<body>
+<div style="width: 300px; height: 300px; background-color: lightblue; box-shadow: inset 4px 4px 10px 4px gray">
+inset 입력시 그림자가 안쪽으로 들어옴!
+</div><br>
+<div style="width: 200px; height: 200px; background-color: yellow;"></div>
+<div style="width: 200px; height: 200px; background-color: rgba(0, 191, 255, 0.9);">'rgb'도 가능하지만 투명도를 주려면 'rgba'로 사용</div>
+<div style="width: 200px; height: 200px; background-color: #F08080;"></div>
+<div style="width: 200px; height: 200px; background-color: hsl(134, 67%, 58%);"></div>
+<div style="width: 200px; height: 200px; background-image: url(./image/small.png); background-repeat: round;"></div>
+<hr>
+<div style="border: 1px solid black; width: 200px; height: 200px; background-image: url(./image/small.png); background-repeat: no-repeat; background-position: center;"></div>
+<div style="border: 1px solid black; width: 200px; height: 200px; background-image: url(./image/small.png); background-repeat: no-repeat; background-size: 100%;"></div>
+<hr>
+<h1>연습</h1>
+<div class="pic"></div>
+<div class="gra"></div>
+
+</body>
+</html>

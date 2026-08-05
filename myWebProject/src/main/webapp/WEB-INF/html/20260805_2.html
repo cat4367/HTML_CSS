@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.box{
+	width: 990px; height: 990px;
+
+}
+.s{
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	background-color: #ddd;
+	z-index: 2;
+}
+.y{
+	background-color: rgba(255, 255, 0, 0.7);
+	position: absolute;
+	top : 30px;
+	left : 50px;
+	z-index: 3;
+}
+.r{
+	background-color: red;
+	position: absolute;
+	top : 0px;
+	left : 0px;
+	z-index: 2;
+}
+</style>
+</head>
+<body>
+<div class="box">
+	<div class="s"></div>
+	<div class="s"></div>
+	<div class="s"></div>
+	<div class="s r"></div>
+	<div class="s y">
+		<div style="display: inline-block; width: 100px; height: 100px; background-color: black; position: absolute; top: 10px; left: 10px">
+		</div>
+	</div>
+	<div class="s"></div>
+	<div class="s"></div>
+	<div class="s"></div>
+	<div class="s"></div>
+	<div class="s" style="position: fixed; top: 60px; left: 60px; background-color: rgba(105,230,40, 0.3);"></div>	
+</div>
+</body>
+</html>
