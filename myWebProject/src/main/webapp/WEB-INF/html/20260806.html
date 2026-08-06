@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.p{
+	background-color: gray;
+	width: 500px;
+	height: 500px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.f{
+	background-color: lightblue;
+	border: 1px solid #aaa;
+	min-width: 48px;
+	min-height: 48px;
+}
+.box{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	color: white;
+	border-radius: 5px;
+	line-height: 200px;
+	text-align: center;
+	font-size: 2em;
+}
+.r{
+	background-color: red;
+	opacity: 0.5;				/*투명도 설정*/
+}
+.b{
+	background-color: blue;
+	visibility: hidden;			/*자리 유지는 되는데 요소가 전부사라짐*/
+}
+.o{
+	background-color: orange;
+	display: none;				/*아예 전부 사라자버림*/
+}
+.g{
+	background-color: green;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+	<div class="p">
+		<div class="f">1</div>
+		<div class="f">2</div>
+		<div class="f">3</div>
+		<div class="f">4</div>
+		<div class="f">5</div>
+		<div class="f">6</div>
+		<div class="f">7</div>
+		<div class="f">8</div>
+		<div class="f">9</div>
+		<div class="f">10</div>
+		<div class="f">11</div>
+		<div class="f">12</div>
+		<div class="f">13</div>
+		<div class="f">14</div>
+		<div class="f">15</div>
+	</div>
+	<hr>
+	<div class="p2">
+		<div>이 아이템을 조절해보세요!</div>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</div>
+	<hr>
+	<div class="box r">클릭!</div>
+	<div class="box o">클릭!</div>
+	<div class="box b">클릭!</div>
+	<div class="box g">클릭!</div>
+</body>
+</html>

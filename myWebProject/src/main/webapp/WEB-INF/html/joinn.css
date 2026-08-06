@@ -9,6 +9,7 @@
     padding: 20px 40px;
     margin: 0 10px;
     font-size: 20px;
+    cursor: pointer;
     }
  .button:hover {
 	  background-color:#002ead;
