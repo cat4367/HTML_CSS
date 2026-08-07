@@ -1,0 +1,50 @@
+@charset "UTF-8";
+*{
+	box-sizing:border-box;
+}
+body{
+	text-align: center;
+}
+.course-list{
+	display: flex;
+	gap : 20px;
+	
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 1200px;
+}
+
+.course-card {
+  width: 33.33%;
+  padding: 20px;
+  gap: 20px;
+  border: 1px solid #cccccc;
+}
+.course-card img {
+	display: block;
+  width: 100%;
+}
+p{
+	text-align: left;
+}
+form{
+	width: 100%;
+	max-width: 200px; 
+	margin: 0 auto;
+}
+.form-item{
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	width: 200px;
+	
+}
+.form-item label {
+  display: inline;
+}
+button{
+	margin-top: 20px;
+	padding: 15px;
+}
