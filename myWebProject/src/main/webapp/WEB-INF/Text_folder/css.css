@@ -1,0 +1,42 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.course-list{
+	display: flex;
+	gap: 20px;
+}
+.course-card {
+	flex: 1;
+	padding: 20px;
+	border: 1px solid #cccccc;
+}
+.course-card img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.form-item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.form-item label {
+	display: inline;
+}
+.form-item input, .form-item select{
+	height: 25px;
+	font-size: 15px;
+}
+button {
+	margin-top: 10px;
+	padding: 15px 20px;
+}

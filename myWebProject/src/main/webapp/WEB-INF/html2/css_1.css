@@ -7,9 +7,9 @@ body{
 	line-height: 1.6;
 }
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 .course-list {
 	display: flex;
@@ -18,8 +18,8 @@ body{
 }
 .course-card {
 	flex: 1;
-  padding: 20px;
-  border: 1px solid #cccccc;
+	padding: 20px;
+	border: 1px solid #cccccc;
 }
 .course-card img {
 	display: block;
