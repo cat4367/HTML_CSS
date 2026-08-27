@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+let a = 10;
+let b = 20;
+console.log(typeof a);
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a > b);
+
+a = '10';
+b = 10;
+console.log(typeof a);
+console.log(a == b);
+console.log(a === b);
+console.log(b++);
+console.log(b);
+
+
+// 주의 !! -> {} : 객체 / [] : 배열
+
+a = {
+		name : '홍길동',
+		age : 20,
+		birth : '2007.02.02'
+};
+
+console.log(a.name);
+console.log(a['name']); //이름이 변할수 있는경우 이 방법을 사용하는게 좋음
+
+a = [1, 2, 3];
+a = [1, '안녕하세요', b, {name:'홍길동', age:20, birth:'2007.02.02'}, [1,2,{}]];
+console.log(a);
+
+// if / else
+a = 10;
+if(a > 50) {
+	console.log("a는 50보다 큽니다");
+} else if (a > 25) {
+	console.log("a는 25보다는 크지만 50보다는 작거나 같습니다.");
+} else {
+	console.log("a는 50보다 작습니다");
+}
+
+// switch
+a = 1;
+switch(a) {
+case 1 :
+	console.log('a는 1이다.');
+	break;
+case 2 :
+	console.log('a는 2이다.');
+	break;
+case 3 :
+	console.log('a는 3이다.');
+	break;
+}
+
+// for
+// for of 배열 [] 순서대로
+for(let a = 0; a < 10; a++){
+	console.log('a : ' + a);
+}
+
+a = [1,2,'안녕','js',3,4,5];
+console.log(a);
+for(const temp of a){
+	console.log(temp);
+}
+// for in 객체 {} 키값만 출력	[출력할때 키의 타입은 문자열로 출력됨]
+a = {
+		name : '홍길동',
+		age : 20,
+		birth : '2007.02.02',
+		1 : 3
+};
+for(const temp in a) {
+	console.log(temp);
+	console.log(typeof temp);
+}
+
+//while
+a = 10;
+while(a > 0){
+	a--;
+	console.log('a는 0보다 큽니다. 현재 a는 ' + a + '입니다.');
+}
+
+//함수 (만드는법 2가지)
+// function 함수 지정
+function consolePrint(message, repeat) {
+	for(let i = 0; i < repeat; i++){
+		console.log(i + ' : ' + message);	
+	}
+	return 100;
+}
+
+a = consolePrint('안녕하세요?', 10);
+console.log(a);
+
+// => 화살표 함수
+const print = (message, repeat) => {
+	for (let i = 0; i < repeat; i++){
+		console.log(i + ' : ' + message);
+	}
+	return repeat + 100;
+}
+b = print('반갑습니다!' , 5);
+console.log(b);
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
