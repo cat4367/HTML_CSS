@@ -19,7 +19,11 @@
   		background-color: lightgreen;
   	}
   	.soldout {
-  		opacity: 0.3;
+  		display:none;
+  	}
+  	
+  	.organic::after{
+  		content : " (유기농)";
   	}
   </style>
   <title>요소 선택하기</title>
@@ -27,7 +31,7 @@
 <body>
   <h1>장보기 목록</h1>
 
-  <section class="plant">
+  <section id="veg" class="plant">
     <h2>채소</h2>
     <ul>
       <li>당근</li>
@@ -38,7 +42,7 @@
   <section id="sweets" class="plant">
     <h2>과일</h2>
     <ul>
-      <li>사과</li>
+      <li id="apple">사과</li>
       <li>딸기</li>
       <li>포도</li>
     </ul>
@@ -60,10 +64,53 @@
   const $plantList = document.getElementsByClassName('plant');
   console.log($plantList);
   
-  const $sweet = document.getElementById('sweets');
-  console.log($sweet);
+  const $sweet = document.getElementById('apple');
+  console.log($sweet); 
+  $sweet.textContent = '맛있는 사과';
   
   const $selector = document.querySelector('section.plant');
   console.log($selector);
+  
+  const $onion = document.querySelector('#veg ul').lastElementChild;
+  console.log($onion);
+  $onion.classList.remove('soldout');
+  $onion.classList.add('organic');
+  
+  $onion.style['color'] = 'red';
+  $onion.style.color = 'green';
+  
+  const $ul =document.querySelector('#veg > ul');
+  $ul.removeChild($onion);						// 요소가 완전히 사라짐
+  
+  while($ul.firstElementChild){					// 요소가 아무것도 안남을때까지 삭제 반복
+	  $ul.removeChild($ul.firstElementChild);
+  }
+  
+  const $tomato = document.createElement('li');	// <li><li>
+  $tomato.textContent = '토마토';					// <li>토마토<li>
+  console.log($tomato);
+  
+  $ul.appendChild($tomato);
+  
+  const veges = ['상추','가지','브로콜리'];
+  for(const item of veges){
+	  const $el = document.createElement('li');
+	  $el.textContent = item;
+	  $ul.appendChild($el);
+  };
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   </script>
 </html>
